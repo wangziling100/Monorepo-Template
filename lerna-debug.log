@@ -6,12 +6,16 @@
 0 silly argv }
 1 notice cli v3.22.1
 2 verbose rootPath /workspace
-3 error Error: Command failed: git config --get user.name
-3 error
-3 error
-3 error     at makeError (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:174:9)
-3 error     at Function.module.exports.sync (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:338:15)
-3 error     at Object.execSync (/usr/local/lib/node_modules/lerna/node_modules/@lerna/child-process/index.js:26:16)
-3 error     at CreateCommand.gitConfig (/usr/local/lib/node_modules/lerna/node_modules/@lerna/create/index.js:181:34)
-3 error     at CreateCommand.initialize (/usr/local/lib/node_modules/lerna/node_modules/@lerna/create/index.js:103:46)
-3 error     at /usr/local/lib/node_modules/lerna/node_modules/@lerna/command/index.js:272:24
+3 error Error: canceled
+3 error     at Interface.<anonymous> (/usr/local/lib/node_modules/lerna/node_modules/read/lib/read.js:66:13)
+3 error     at Interface.emit (events.js:315:20)
+3 error     at Interface._ttyWrite (readline.js:868:16)
+3 error     at ReadStream.onkeypress (readline.js:205:10)
+3 error     at ReadStream.emit (events.js:315:20)
+3 error     at emitKeys (internal/readline/utils.js:335:14)
+3 error     at emitKeys.next (<anonymous>)
+3 error     at ReadStream.onData (readline.js:1137:36)
+3 error     at ReadStream.emit (events.js:315:20)
+3 error     at addChunk (_stream_readable.js:295:12)
+3 error     at readableAddChunk (_stream_readable.js:271:9)
+3 error     at ReadStream.Readable.push (_stream_readable.js:212:10)
