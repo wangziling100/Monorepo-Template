@@ -1,0 +1,7 @@
+{
+    "actions": [
+        "yarn install",
+        "yarn lint",
+        "yarn prepare"
+    ]
+}

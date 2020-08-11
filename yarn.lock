@@ -3091,11 +3091,6 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-mb@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/mb/-/mb-1.0.0.tgz#767972cb37cfa37402892e76baf975d33d86d36e"
-  integrity sha1-dnlyyzfPo3QCiS52uvl10z2G024=
-
 meow@^3.3.0:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/meow/-/meow-3.7.0.tgz#72cb668b425228290abbfa856892587308a801fb"
@@ -3451,11 +3446,6 @@ npm-normalize-package-bin@^1.0.0, npm-normalize-package-bin@^1.0.1:
     osenv "^0.1.5"
     semver "^5.6.0"
     validate-npm-package-name "^3.0.0"
-
-npm-package-example@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/npm-package-example/-/npm-package-example-1.1.2.tgz#745d9ef2febd7fe9d40ddc32bb3fe63311d369ef"
-  integrity sha1-dF2e8v69f+nUDdwyuz/mMxHTae8=
 
 npm-packlist@^1.4.4:
   version "1.4.8"
@@ -4304,13 +4294,6 @@ slide@^1.1.6:
   resolved "https://registry.yarnpkg.com/slide/-/slide-1.1.6.tgz#56eb027d65b4d2dce6cb2e2d32c4d4afc9e1d707"
   integrity sha1-VusCfWW00tzmyy4tMsTUr8nh1wc=
 
-smallest@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/smallest/-/smallest-1.0.1.tgz#59ddee13546911b2177f36af61a866bf3b3bfb81"
-  integrity sha1-Wd3uE1RpEbIXfzavYahmvzs7+4E=
-  dependencies:
-    to-array "~0.1.4"
-
 smart-buffer@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/smart-buffer/-/smart-buffer-4.1.0.tgz#91605c25d91652f4661ea69ccf45f1b331ca21ba"
@@ -4695,11 +4678,6 @@ tmp@^0.0.33:
   integrity sha512-jRCJlojKnZ3addtTOjdIqoRuPEKBvNXcGYqzO6zWZX8KfKEpnGY5jfggJQ3EjKuu8D4bJRr0y+cYJFmYbImXGw==
   dependencies:
     os-tmpdir "~1.0.2"
-
-to-array@~0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/to-array/-/to-array-0.1.4.tgz#17e6c11f73dd4f3d74cda7a4ff3238e9ad9bf890"
-  integrity sha1-F+bBH3PdTz10zaek/zI46a2b+JA=
 
 to-object-path@^0.3.0:
   version "0.3.0"
