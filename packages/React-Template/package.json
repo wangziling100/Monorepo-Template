@@ -1,0 +1,113 @@
+{
+  "name": "@wangziling100/soft-plugin",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "wangziling100 <wangziling1000@gmail.com>",
+  "homepage": "https://github.com/wangziling100/React-Components#readme",
+  "main": "lib/soft-plugin.js",
+  "license": "MIT",
+  "directories": {
+    "lib": "lib",
+    "test": "./src/test"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangziling100/React-Components.git"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js,jsx,ts,tsx}",
+      "!**/*.test.**",
+      "!**/coverage/**",
+      "!**/.github/**",
+      "!**/dist/**",
+      "!**/*config.**"
+    ],
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    }
+  },
+  "scripts": {
+    "test": "jest src/test",
+    "eject": "react-scripts eject",
+    "bundle": "webpack",
+    "build": "webpack --mode production",
+    "start": "react-scripts start",
+    "lint": "eslint ./src/components/*",
+    "test:react": "react-scripts test"
+  },
+  "bugs": {
+    "url": "https://github.com/wangziling100/React-Components/issues"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^10.4.8",
+    "@testing-library/user-event": "^12.1.1",
+    "@types/jest": "^26.0.9",
+    "@types/node": "^14.0.27",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "antd": "^4.5.2",
+    "postcss-nested-ancestors": "^2.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.2",
+    "typescript": "~3.9.7"
+
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/autoprefixer": "^9.7.2",
+    "@types/postcss-import": "^12.0.0",
+    "@types/react": "^16.9.45",
+    "@types/react-dom": "^16.9.8",
+    "autoprefixer": "^9.8.6",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.2.1",
+    "css-minimizer-webpack-plugin": "^1.1.0",
+    "cssnano": "^4.1.10",
+    "glob": "^7.1.6",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-mixins": "^6.2.3",
+    "purgecss-webpack-plugin": "^2.3.0",
+    "style-loader": "^1.2.1",
+    "tailwindcss": "^1.6.2",
+    "ts-jest": "^26.2.0",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}

@@ -1,4 +1,4 @@
-name: Node.js Auto CI
+name: Node.js Auto Publish
 
 on:
   push
@@ -49,12 +49,11 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: codecov-yml
-          path: ${{needs.ci.outputs.moduleDir}}/
       - name: Download coverage report
         uses: actions/download-artifact@v2
         with:
           name: coverage-report
-          path: ${{needs.ci.outputs.moduleDir}}/coverage
+          path: ./coverage
       - shell: bash
         run: ls
       - name: Upload coverage to Codecov
@@ -85,7 +84,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: dist
-          path: ${{needs.ci.outputs.moduleDir}}/dist
+          path: ./dist
       - uses: wangziling100/AutoPublish@v1.0.0-alpha.26
         with:
           scope: '@wangziling100'
