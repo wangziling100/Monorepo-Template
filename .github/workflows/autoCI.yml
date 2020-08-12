@@ -58,14 +58,13 @@ jobs:
       - shell: bash
         run: ls
       - name: Upload coverage to Codecov
-        run: cd ${{needs.ci.outputs.moduleDir}}
         uses: codecov/codecov-action@v1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           #file: clover.xml
           #file: ./coverage/coverage-final.json
           #files: clover.xml,coverga-final.json,lcov-report
-          directory: ./coverage
+          directory: ${{needs.ci.outputs.moduleDir}}/coverage
           flags: unittests
           #env_vars: OS,PYTHON
           name: codecov-umbrella
