@@ -6,13 +6,41 @@ on:
 jobs:
   ci:
     runs-on: ubuntu-latest
+    outputs:
+      moduleDir: ${{ steps.auto-ci.outputs.moduleDir}}
     steps:
-      - uses: actions/checkout@v2:wangziling100
+      - uses: actions/checkout@v2
       - name: auto-ci
-        uses: wangziling100/AutoCI@v1.0.4
+        id: auto-ci
+        uses: wangziling100/AutoCI@v1.0.5
         with:
           configPath: .github/autoci.config.json
           #modulesDir: packages
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage-report
+          path: ${{ steps.auto-ci.outputs.moduleDir}}/coverage
+  codecov:
+    runs-on: ubuntu-latest
+    needs: ci
+    steps:
+      - name: Download coverage report
+        uses:  actions/download-artifact@v2
+        with:
+          name: coverage-report
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          #file: ./coverage.xml
+          #files: ./coverage1.xml,./coverage2.xml
+          directory: coverage
+          flags: unittests
+          #env_vars: OS,PYTHON
+          name: codecov-umbrella
+          fail_ci_if_error: true
+          path_to_write_report: coverage/codecov_report.gz
   publish:
     runs-on: ubuntu-latest
     needs: ci
