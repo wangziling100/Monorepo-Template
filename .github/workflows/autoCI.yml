@@ -58,8 +58,8 @@ jobs:
       - shell: bash
         run: ls
       - name: Upload coverage to Codecov
+        run: cd ${{needs.ci.outputs.moduleDir}}
         uses: codecov/codecov-action@v1
-        working-directory: ${{needs.ci.outputs.moduleDir}}
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           #file: clover.xml
